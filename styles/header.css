@@ -1,0 +1,20 @@
+
+header{
+    width: 100%;    
+    background-color: var(--clr-black);
+    position: fixed;
+    z-index: 999;
+}
+
+nav{
+    height: 100%;
+    padding-inline: 2rem;
+}
+
+.netflix_icon{
+    height: 4rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

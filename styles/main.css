@@ -1,0 +1,97 @@
+
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main_headline{
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.headline_box{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-left: 2rem;
+}
+
+.main_healine_title{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--clr-white);
+    line-height: 2rem;
+
+}
+
+.main_healine_description{
+    max-width: 50ch;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: var(--font-inter);
+    color: var(--clr-white);
+}
+
+.container{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
+    justify-content: space-between;
+}
+.wrapper_slider{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 11rem;
+    gap: 1rem;
+    overflow-x:scroll;
+    scroll-snap-type: inline mandatory;
+}
+
+.wrapper_heading{
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: var(--font-inter);
+    color: var(--clr-white);
+}
+
+
+.card{
+    /* height: 16rem; */
+
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-snap-align: start;
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    /* object-fit: cover; */
+}
+
+.cardimage{
+    /* object-fit: cover; */
+    height: 16rem;
+
+}
+
