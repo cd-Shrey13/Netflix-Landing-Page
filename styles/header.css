@@ -9,6 +9,9 @@ header{
 nav{
     height: 100%;
     padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .netflix_icon{
@@ -17,4 +20,86 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navbar_rigthdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    min-width:20px;
+}
+
+.navbar_heading{
+    display: none;
+}
+
+.join_now_btn{
+    background-color: #d81f26;
+    padding: .5rem 2rem;
+    font-family: var(--font-inter);
+    color: var(--clr-white);
+    border: none;
+    font-weight: 600;
+    border-radius: 2px;
+    text-wrap: nowrap;
+}
+
+.join_now_btn:hover{
+    background-color: #ff040c;
+    cursor: pointer;
+}
+
+.sign_in_btn{
+    background: transparent;
+    padding: .5rem 2rem;
+    font-family: var(--font-inter);
+    color: var(--clr-white);
+    border: solid var(--clr-grey) 1px;
+    font-weight: 600;
+    border-radius: 2px;
+    text-wrap: nowrap;
+
+}
+
+.sign_in_btn:hover{
+    background-color: #a9a8a83b;
+    cursor: pointer;
+}
+
+
+@media (max-width:425px) {
+    
+    .netflix_icon{
+        height: 4rem;
+        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .join_now_btn{
+        padding: .5rem 2rem;
+    }
+    
+    .sign_in_btn{
+        background: transparent;
+        padding: .5rem 2rem;
+        font-family: var(--font-inter);
+        color: var(--clr-white);
+        border: solid var(--clr-grey) 1px;
+        font-weight: 600;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .navbar_heading{
+        display: block;
+    }
+
+
+    
 }

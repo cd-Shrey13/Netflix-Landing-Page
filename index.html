@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Netflix Landingpage Clone | cd-shrey13</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="icon" type="image/x-icon" href="assets/netflix.svg" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
@@ -19,7 +20,14 @@
     <header>
       <nav>
         <div class="netflix_icon">
-          <img src="./assets/netflix-2-logo-svgrepo-com.svg" alt="Netflix" />
+          <a href="https://www.netflix.com/">
+            <img src="assets/netflix-2-logo-svgrepo-com.svg" alt="Netflix" />
+          </a>
+        </div>
+        <div class="navbar_rigthdiv">
+          <span class="navbar_heading">UNLIMITED TV SHOWS & MOVIES</span>
+          <button class="join_now_btn" type="button">Join Now</button>
+          <button class="sign_in_btn" type="button">Sign In</button>
         </div>
       </nav>
     </header>
@@ -36,71 +44,137 @@
       </section>
       <section class="container">
         <div class="wrapper">
-            <h3 class="wrapper_heading">Populer Shows</h3>
-            <div class="wrapper_slider populer"></div>
-          </div>
-          <div class="wrapper">
-            <h3 class="wrapper_heading">Trending Shows</h3>
-            <div class="wrapper_slider trending"></div>
-          </div>
-          <!-- <div class="wrapper">
+          <h3 class="wrapper_heading">Populer Shows</h3>
+          <div class="wrapper_slider populer"></div>
+        </div>
+        <div class="wrapper">
+          <h3 class="wrapper_heading">Trending Shows</h3>
+          <div class="wrapper_slider trending"></div>
+        </div>
+        <!-- <div class="wrapper">
             <h3 class="wrapper_heading">Originals</h3>
             <div class="wrapper_slider originals"></div>
           </div> -->
-          <div class="wrapper">
-            <h3 class="wrapper_heading">Populer Shows</h3>
-            <div class="wrapper_slider action"></div>
-          </div>
-          <div class="wrapper">
-            <h3 class="wrapper_heading">Populer Shows</h3>
-            <div class="wrapper_slider comedy"></div>
-          </div>
-          <div class="wrapper">
-            <h3 class="wrapper_heading">Horror Shows</h3>
-            <div class="wrapper_slider horror"></div>
-          </div>
-          <div class="wrapper">
-            <h3 class="wrapper_heading">Romantic Shows</h3>
-            <div class="wrapper_slider romance"></div>
-          </div>
-          <div class="wrapper">
-            <h3 class="wrapper_heading">Documentries</h3>
-            <div class="wrapper_slider documentries"></div>
-          </div>
+        <div class="wrapper">
+          <h3 class="wrapper_heading">Populer Shows</h3>
+          <div class="wrapper_slider action"></div>
+        </div>
+        <div class="wrapper">
+          <h3 class="wrapper_heading">Populer Shows</h3>
+          <div class="wrapper_slider comedy"></div>
+        </div>
+        <div class="wrapper">
+          <h3 class="wrapper_heading">Horror Shows</h3>
+          <div class="wrapper_slider horror"></div>
+        </div>
+        <div class="wrapper">
+          <h3 class="wrapper_heading">Romantic Shows</h3>
+          <div class="wrapper_slider romance"></div>
+        </div>
+        <div class="wrapper">
+          <h3 class="wrapper_heading">Documentries</h3>
+          <div class="wrapper_slider documentries"></div>
+        </div>
+        <div class="blurcontainer"></div>
+      </section>
+      <section class="main_join_section">
+        <span class="main_join_section_heading">There's even more to watch.</span>
+        <p class="main_join_section_description">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals and more. Watch as much as you want, anytime you want.</p>
+        <button class="main_join_section_btn join_now_btn" type="button">Join Now</button>
       </section>
     </main>
     <footer>
       <div class="footer_questioncontainer">
-        <a class="footer_heading" href="https://www.netflix.com/tudum">Read about Netflix TV shows and movies and watch bonus videos on Tudum.com</a>
-        <a class="footer_heading" href="https://help.netflix.com/contactus">Questions? Contact us.</a>
+        <a class="footer_heading" href="https://www.netflix.com/tudum"
+          >Read about Netflix TV shows and movies and watch bonus videos on
+          Tudum.com</a
+        >
+        <a class="footer_heading" href="https://help.netflix.com/contactus"
+          >Questions? Contact us.</a
+        >
       </div>
-        <div class="footer_container">
-          <ul class="footer_list">
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">FAQ</a></li>
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">Investor Relations</a></li>
-            <li><a href="http://ir.netflix.com/" class="footer_link">Privacy</a></li>
-            <li><a href="https://help.netflix.com/legal/privacy" class="footer_link">Speed Test</a></li>
-          </ul>
-          <ul class="footer_list">
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">Help Centre</a></li>
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">Jobs</a></li>
-            <li><a href="http://ir.netflix.com/" class="footer_link">Cookie Preferences</a></li>
-            <li><a href="https://help.netflix.com/legal/privacy" class="footer_link">Legal Notices</a></li>
-          </ul>
-          <ul class="footer_list">
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">Account</a></li>
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">Ways to Watch</a></li>
-            <li><a href="http://ir.netflix.com/" class="footer_link">Corporate Information</a></li>
-            <li><a href="https://help.netflix.com/legal/privacy" class="footer_link">Only on Netflix</a></li>
-          </ul>
-          <ul class="footer_list">
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">Media Centre</a></li>
-            <li><a href="https://help.netflix.com/support/412" class="footer_link">Terms of Use</a></li>
-            <li><a href="http://ir.netflix.com/" class="footer_link">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer_btn">
-        </div>
+      <div class="footer_container">
+        <ul class="footer_list">
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >Investor Relations</a
+            >
+          </li>
+          <li>
+            <a href="http://ir.netflix.com/" class="footer_link">Privacy</a>
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/privacy" class="footer_link"
+              >Speed Test</a
+            >
+          </li>
+        </ul>
+        <ul class="footer_list">
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >Help Centre</a
+            >
+          </li>
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >Jobs</a
+            >
+          </li>
+          <li>
+            <a href="http://ir.netflix.com/" class="footer_link"
+              >Cookie Preferences</a
+            >
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/privacy" class="footer_link"
+              >Legal Notices</a
+            >
+          </li>
+        </ul>
+        <ul class="footer_list">
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >Account</a
+            >
+          </li>
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >Ways to Watch</a
+            >
+          </li>
+          <li>
+            <a href="http://ir.netflix.com/" class="footer_link"
+              >Corporate Information</a
+            >
+          </li>
+          <li>
+            <a href="https://help.netflix.com/legal/privacy" class="footer_link"
+              >Only on Netflix</a
+            >
+          </li>
+        </ul>
+        <ul class="footer_list">
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >Media Centre</a
+            >
+          </li>
+          <li>
+            <a href="https://help.netflix.com/support/412" class="footer_link"
+              >Terms of Use</a
+            >
+          </li>
+          <li>
+            <a href="http://ir.netflix.com/" class="footer_link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_btn"></div>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -35,19 +35,27 @@ async function fetchCheck(url, className) {
 }
 
 function appendCards(data, className) {
-  data.results.forEach((obj) => {
-    if (obj.title !== undefined) { 
-      const newCard = document.createElement("div");
-      const cardImage = document.createElement('img');
-      const title = document.createElement('p');
-      cardImage.src = `${imageURL}/${obj.poster_path}`;
-      title.innerHTML = `${obj.title}`;
-      cardImage.className = 'cardimage';
-      newCard.appendChild(cardImage);
-      newCard.appendChild(title);
-      newCard.className = "card";
-      document.querySelector(`.${className}`).appendChild(newCard);
-    }
+
+    data.results.forEach((obj) => {
+
+      if (obj.title === undefined) {
+        return;
+      }
+
+        const newCard = document.createElement("div");
+        const newCardImage = document.createElement('img');
+        const newCardImageTitle = document.createElement('p');
+
+        newCardImage.src = `${imageURL}/${obj.poster_path}`;
+        newCardImageTitle.innerHTML = `${obj.title}`;
+        newCardImage.className = 'cardimage';
+
+        newCard.appendChild(newCardImage);
+        newCard.appendChild(newCardImageTitle);
+        newCard.className = "card";
+        newCardImageTitle.className = "card_image_title";
+
+        document.querySelector(`.${className}`).appendChild(newCard);
   });
 }
 

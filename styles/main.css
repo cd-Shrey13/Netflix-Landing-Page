@@ -1,12 +1,16 @@
 
 
 main{
-    width: 100%;
+    /* height: fit-content; */
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 0;
+    /* backdrop-filter: blur(10px); */
+
 }
 
 .main_headline{
@@ -19,6 +23,7 @@ main{
 
 .headline_box{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 2.5rem;
     margin-left: 2rem;
@@ -28,7 +33,7 @@ main{
     font-size: 3.2rem;
     font-weight: 900;
     color: var(--clr-white);
-    line-height: 2rem;
+    line-height: 3rem;
 
 }
 
@@ -87,11 +92,58 @@ main{
     display: flex;
     flex-direction: column;
     /* object-fit: cover; */
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    color: rgb(137, 135, 135);
+    cursor: pointer;
+    /* border: 1px red solid; */
 }
 
 .cardimage{
     /* object-fit: cover; */
     height: 16rem;
+}
 
+.card_image_title{
+    text-align: center;
+}
+
+.blurcontainer{
+    height: 30rem;
+    width: 100vw;
+    background-color:#181818f6;
+    position: absolute;
+    bottom: -1em;
+    filter: blur(10px);
+}
+
+.main_join_section{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    bottom: -5rem;
+}
+
+.main_join_section_heading{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.main_join_section_description{
+    max-width: 52ch;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.main_join_section_btn{
+    padding: .80rem 2.5rem;
 }
 

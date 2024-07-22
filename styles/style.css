@@ -19,6 +19,8 @@ html, body{
     color: var(--clr-white);
     background-color: var(--clr-blackshade);
     font-family: var(--font-inter);
+    scrollbar-width: none;
+    /* scrollbar-width: 0; */
 }
 
 a{
