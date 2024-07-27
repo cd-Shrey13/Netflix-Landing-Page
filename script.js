@@ -5,7 +5,6 @@ const imageURL = `https://image.tmdb.org/t/p/w500`;
 const requests = {
   fetchPopular: `${baseURL}/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&${APIKEY}`,
   fetchTrending: `${baseURL}/trending/all/week?${APIKEY}&language=en-US`,
-  // fetchNetflixOrignals: `${baseURL}/discover/tv?${APIKEY}&with_networks=213`,
   fetchActionMovies: `${baseURL}/discover/movie?${APIKEY}&with_genres=28`,
   fetchComedyMovies: `${baseURL}/discover/movie?${APIKEY}&with_genres=35`,
   fetchHorrorMovies: `${baseURL}/discover/movie?${APIKEY}&with_genres=27`,
@@ -16,7 +15,6 @@ const requests = {
 const categories = [
   "populer",
   "trending",
-  // "originals",
   "action",
   "comedy",
   "horror",
@@ -35,27 +33,25 @@ async function fetchCheck(url, className) {
 }
 
 function appendCards(data, className) {
+  data.results.forEach((obj) => {
+    if (obj.title === undefined) {
+      return;
+    }
 
-    data.results.forEach((obj) => {
+    const newCard = document.createElement("div");
+    const newCardImage = document.createElement("img");
+    const newCardImageTitle = document.createElement("p");
 
-      if (obj.title === undefined) {
-        return;
-      }
+    newCardImage.src = `${imageURL}/${obj.poster_path}`;
+    newCardImageTitle.innerHTML = `${obj.title}`;
+    newCardImage.className = "cardimage";
 
-        const newCard = document.createElement("div");
-        const newCardImage = document.createElement('img');
-        const newCardImageTitle = document.createElement('p');
+    newCard.appendChild(newCardImage);
+    newCard.appendChild(newCardImageTitle);
+    newCard.className = "card";
+    newCardImageTitle.className = "card_image_title";
 
-        newCardImage.src = `${imageURL}/${obj.poster_path}`;
-        newCardImageTitle.innerHTML = `${obj.title}`;
-        newCardImage.className = 'cardimage';
-
-        newCard.appendChild(newCardImage);
-        newCard.appendChild(newCardImageTitle);
-        newCard.className = "card";
-        newCardImageTitle.className = "card_image_title";
-
-        document.querySelector(`.${className}`).appendChild(newCard);
+    document.querySelector(`.${className}`).appendChild(newCard);
   });
 }
 
